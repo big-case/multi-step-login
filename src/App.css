@@ -29,7 +29,7 @@ body {
   height: 400px;
   background-color: rgb(239, 241, 245);
   border-radius: 8px;
-  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 15px 1px rgb(124, 127, 147);
   display: flex;
   flex-direction: column;
   color: rgb(76, 79, 105);
@@ -51,7 +51,7 @@ body {
   justify-content: center;
 }
 
-.form-container .footer button {
+.form-container .footer Button {
   border-radius: 7px;
   width: 100px;
   height: 40px;
@@ -59,7 +59,7 @@ body {
   font-weight: bold;
   color: rgb(230, 233, 239);
   border: 0 none;
-  border-radius: 1px;
+  border-radius: 8px;
   cursor: pointer;
   padding: 10px 5px;
   margin: 10px 5px;
@@ -79,7 +79,6 @@ body {
   margin: 5px;
   width: 200px;
   height: 20px;
-  padding-left: 5px;
   font-size: 20px;
   color: rgb(76, 79, 105);
 }
@@ -97,7 +96,6 @@ body {
   margin: 5px;
   width: 200px;
   height: 20px;
-  padding-left: 5px;
   font-size: 20px;
   color: rgb(76, 79, 105);
 }
@@ -129,16 +127,21 @@ body {
   margin: 5px;
   width: 200px;
   height: 20px;
-  padding-left: 5px;
   font-size: 20px;
   color: rgb(76, 79, 105);
 }
 
-.input {
-  border: 2px solid rgb(254, 100, 11);
-  border-radius: 5px;
-}
-
-.input:focus {
-  border: 3px solid rgb(254, 100, 11);
+.form-container .footer Button:disabled {
+  border-radius: 7px;
+  width: 100px;
+  height: 40px;
+  background-color: rgb(172, 176, 190);
+  font-weight: bold;
+  color: rgb(76, 79, 105);
+  border: 0 none;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px;
+  margin: 5px;
 }

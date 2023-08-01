@@ -1,8 +1,9 @@
-import React, { useState } from "react";
-import SignUpInfo from "./SignUpInfo";
-import PersonalInfo from "./PersonalInfo";
 import OtherInfo from "./OtherInfo";
-import { Button, Snackbar } from "@mui/material";
+import SignUpInfo from "./SignUpInfo";
+import React, { useState } from "react";
+import PersonalInfo from "./PersonalInfo";
+import Button from "@mui/material/Button";
+import Snackbar from "@mui/material/Snackbar";
 
 function Form() {
   const [open, setOpen] = useState(false);
@@ -55,7 +56,7 @@ function Form() {
         <div className="body">{PageDisplay()}</div>
         <div className="footer">
           <Button
-            disabled={page == 0}
+            disabled={page === 0}
             onClick={() => {
               setPage((currPage) => currPage - 1);
             }}

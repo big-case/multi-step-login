@@ -1,5 +1,5 @@
-import { TextField } from "@mui/material";
 import React from "react";
+import TextField from "@mui/material/TextField";
 
 function SignUpInfo({ formData, setFormData }) {
   return (
@@ -7,6 +7,9 @@ function SignUpInfo({ formData, setFormData }) {
       <TextField
         type="text"
         label="Email"
+        margin="dense"
+        color="warning"
+        variant="standard"
         value={formData.email}
         onChange={(event) =>
           setFormData({ ...formData, email: event.target.value })
@@ -14,9 +17,11 @@ function SignUpInfo({ formData, setFormData }) {
       />
       <TextField
         className="input"
-        style={{ marginBlock: '7px' }}
         type="password"
         label="Password"
+        margin="dense"
+        color="warning"
+        variant="standard"
         value={formData.password}
         onChange={(event) =>
           setFormData({ ...formData, password: event.target.value })
@@ -25,6 +30,9 @@ function SignUpInfo({ formData, setFormData }) {
       <TextField
         type="password"
         label="Confirm Password"
+        margin="dense"
+        color="warning"
+        variant="standard"
         value={formData.confirmPassword}
         onChange={(event) =>
           setFormData({ ...formData, confirmPassword: event.target.value })
